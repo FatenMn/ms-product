@@ -18,7 +18,7 @@ public class NotificationService {
 
     //topic
     @KafkaListener(topics = "order-placed")
-    public void listen(com.techie.microservices.order.event.OrderPlacedEvent orderPlacedEvent){
+    public void listen(com.sesame.microservices.order.event.OrderPlacedEvent orderPlacedEvent){
         log.info("Got Message from order-placed topic {}", orderPlacedEvent);
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);

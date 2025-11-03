@@ -1,4 +1,4 @@
-package java.com.techie.microservices.inventory;
+package java.com.sesame.microservices.inventory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
